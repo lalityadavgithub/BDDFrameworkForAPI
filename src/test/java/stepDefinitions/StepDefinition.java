@@ -3,6 +3,7 @@ package stepDefinitions;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,11 +32,10 @@ public class StepDefinition extends Utils {
     TestDataBuild data=new TestDataBuild();
 	
 	@Given("Add Place Payload")
-	public void add_place_payload() {
+	public void add_place_payload() throws IOException {
 		
 
-	 resspec=new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
-	 res=given().log().all().spec(requestSpecification())
+	 res=given().spec(requestSpecification())
 	.body(data.addPlacePayload());
 	 
 	}
@@ -43,6 +43,8 @@ public class StepDefinition extends Utils {
 	@When("user calls {string} with Post http request")
 	public void user_calls_with_Post_http_request(String string) {
 		
+		 resspec=new ResponseSpecBuilder().expectStatusCode(200).expectContentType(ContentType.JSON).build();
+
 		 response=res.when().post("/maps/api/place/add/json")
 				 .then().log().all().spec(resspec).extract().response();
 				

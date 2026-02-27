@@ -15,7 +15,10 @@ public class FrameworkSteps {
 		7. Implement logging in Framework to log request and response details
 		8. Devlop End to End Functionality Test with all validation and Assertions
 		9. Define Global Properties  and  drive all the global variables from properties file
-		10. Define Enum class with constants to centralize all resources 
+		10. Define Enum class with constants to centralize all resources
+		11. Implement Data driven Mechanism to drive data dynamically from feature file
+		12. Implement Paramterization to run tests with multiple data sets using Cucumber Example Keyword
+		 
 
 */
 
