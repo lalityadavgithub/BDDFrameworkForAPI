@@ -16,10 +16,11 @@ import io.restassured.specification.RequestSpecification;
 
 public class Utils {
 	
-	RequestSpecification req;
+	public static RequestSpecification req;
 	
 	public RequestSpecification requestSpecification() throws IOException {
 		
+		if(req==null) {
 		PrintStream log;
 		try {
 			log = new PrintStream(new FileOutputStream("logging.txt"));
@@ -32,6 +33,8 @@ public class Utils {
 		.addFilter(ResponseLoggingFilter.logResponseTo(log))
 				 .setContentType(ContentType.JSON).build();
 		 
+		 return req;
+		}
 		 return req;
 	}
 	

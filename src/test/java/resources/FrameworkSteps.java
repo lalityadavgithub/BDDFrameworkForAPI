@@ -18,6 +18,11 @@ public class FrameworkSteps {
 		10. Define Enum class with constants to centralize all resources
 		11. Implement Data driven Mechanism to drive data dynamically from feature file
 		12. Implement Paramterization to run tests with multiple data sets using Cucumber Example Keyword
+		13. Add More Tests and implement Tagging Mechanism to run selected Tests from Test Runner file
+		14. Implement Pre and Post conditions for tests with Cucumber Hooks
+		15. Execute Complete Framework from Maven Commands
+		16. Implement Maven driven global values into Test fpr dynamic execution
+		17. Generate Reports for Test Execution results
 		 
 
 */

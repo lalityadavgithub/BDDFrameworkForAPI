@@ -12,11 +12,11 @@ Multiparts:		<none>
 Body:
 {
     "accuracy": 50,
-    "name": "Frontline house",
+    "name": "World cross center",
     "phone_number": "(+91) 983 893 3937",
-    "address": "29, side layout, cohen 09",
+    "address": "AAhouse",
     "website": "https://rahulshettyacademy.com",
-    "language": "French-IN",
+    "language": "English",
     "location": {
         "lat": -38.383494,
         "lng": 33.427362
@@ -27,7 +27,7 @@ Body:
     ]
 }
 HTTP/1.1 200 OK
-Date: Fri, 27 Feb 2026 09:06:15 GMT
+Date: Mon, 02 Mar 2026 12:23:05 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Strict-Transport-Security: max-age=604800; includeSubDomains
 Access-Control-Allow-Origin: *
@@ -41,8 +41,56 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "aa02756030d17a098f66be6a3ff5aa53",
+    "place_id": "46ce694260d749324c3e98de0ec32b09",
     "scope": "APP",
-    "reference": "19c4e2c03890a427bb5150265de1166619c4e2c03890a427bb5150265de11666",
-    "id": "19c4e2c03890a427bb5150265de11666"
+    "reference": "98ec264988d30404e17cf54b7b67fe8498ec264988d30404e17cf54b7b67fe84",
+    "id": "98ec264988d30404e17cf54b7b67fe84"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accuracy": 50,
+    "name": "Sea cross center",
+    "phone_number": "(+91) 983 893 3937",
+    "address": "BBhouse",
+    "website": "https://rahulshettyacademy.com",
+    "language": "Spanish",
+    "location": {
+        "lat": -38.383494,
+        "lng": 33.427362
+    },
+    "types": [
+        "shoe park",
+        "shop"
+    ]
+}
+HTTP/1.1 200 OK
+Date: Mon, 02 Mar 2026 12:23:08 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Strict-Transport-Security: max-age=604800; includeSubDomains
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "29691a21ceebf8468522ceec1994b671",
+    "scope": "APP",
+    "reference": "2ca4feb506fc691b8e4cb9e816b24a2f2ca4feb506fc691b8e4cb9e816b24a2f",
+    "id": "2ca4feb506fc691b8e4cb9e816b24a2f"
 }
