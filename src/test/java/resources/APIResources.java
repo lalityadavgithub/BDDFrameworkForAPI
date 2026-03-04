@@ -5,8 +5,11 @@ public enum APIResources {
 	
 	AddPlaceAPI("/maps/api/place/add/json"),
 	GetPlaceAPI("/maps/api/place/get/json"),
-	DeletePlaceAPI("/maps/api/place/delete/json");
+	DeletePlaceAPI("/maps/api/place/delete/json"),
 	
+	//duplicate
+	DeletePlaceAPI1("/maps/api/place/delete1/json"),
+	DeletePlaceAPI2("/maps/api/place/delete2/json");
 	
 	private String resource;
 
